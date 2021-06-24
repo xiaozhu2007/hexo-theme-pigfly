@@ -137,14 +137,6 @@
                                     $(".top img").click(_ => {
                                         $(document).scrollTop(0);
                                     })
-                                    var time = new Date();
-                                    var time_new = time.getTime();
-                                    var str = '2019-03-01 12:14:46';
-                                    str = str.replace(/-/g, '/');
-                                    var date = new Date(str);
-                                    var time_old = date.getTime();
-                                    var cha = (time_new - time_old) / 86400000;
-                                    console.log('本站已运行' + Math.floor(cha) + '天');
                                     // js部分的代码，主要就是拿来兼容移动端和PC端
                                 </script>
                             </div>
