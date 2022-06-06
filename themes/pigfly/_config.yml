@@ -1,4 +1,19 @@
-# main menu navigation url and icon
+#---------------------------
+# Hexo Theme Pigfly
+# Author: xiaozhu2007
+# Github: https://github.com/xiaozhu2007/hexo-theme-pigfly
+#
+# Guide: https://github.com/xiaozhu2007/hexo-theme-pigfly/wiki/
+# You can get more detailed help from the guide
+#---------------------------
+
+
+#---------------------------
+# 菜单 / 导航
+# Main Menu / Navigation
+#---------------------------
+
+# Main Menu / Navigation url and icon
 # 配置菜单导航的名称、路径和图标icon.
 menu:
   首页:
@@ -144,7 +159,7 @@ recommend:
   enable: true
   showTitle: true
   useConfig: false # 是否使用配置文件, 在 _data/recommends.json 下配置推荐文章, false则会走主题配置的 top 属性
-  # useConfig 使用方式: 将主题 hexo-theme-islu/source/_data/recommends.json 移动到 my-blog/source/_data/下修改配置即可
+  # useConfig 使用方式: 将主题 hexo-theme-pigfly/source/_data/recommends.json 移动到 my-blog/source/_data/下修改配置即可
 
 # Configure website favicon and LOGO
 # 配置网站favicon和网站LOGO
@@ -292,8 +307,8 @@ postCalendar: true
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
   enable: true
-  appId: y0NrVMH1z6NfWPg0LUubOSQB-MdYXbMMI
-  appKey: t70eMdfxnr299133dk3TPqSw
+  appId: xxxxxxxxxxxxxxx
+  appKey: xxxxxxxxxxyyyyyyyyxxxxxxzzz
   notify: true
   verify: true
   visitor: true
@@ -301,7 +316,7 @@ valine:
   pageSize: 10
   placeholder: '留下你的足迹..' # Comment Box placeholder
   count: true
-  enableQQ: 3356136957
+  enableQQ: true
   recordIP: true
   requiredFields:
     - nick
@@ -322,14 +337,14 @@ valine:
     - 小伙伴
     - 访客
   friends: # The MD5 String Array of friends Email to show friends Flag.[Just Only xCss Style mode]
-    - 89ca9fc627d42e188b31660e338bf03f # 闲花手札
+    - d6aa745c99f223819bf39b01d1397be9 # 闲花手札
     - 68c4c9e1b9a3d34317dc6faefe2ea00e # 阿蓝
 
 # Whether to display fork me on github icon and link, default true, You can change it to your repo address
 # 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
 githubLink:
   enable: false
-  url: https://github.com/ialoe/hexo-theme-islu
+  url: https://github.com/xiaozhu2007/hexo-theme-pigfly
   title: Fork Me
 
 # The password verification feature of read post. To use this feature,
@@ -366,10 +381,16 @@ baiduAnalytics:
 ## 此处开启要配置config.yml中的baidu_url_submit和deploy
 baiduPush: false
 
-# The used front-end library can be replaced with the corresponding CDN address as needed,
-# If the specific version is not specified below, you can use the latest version.
-# 使用到的前端库，可按需替换成对应的CDN地址，如果下面未指定具体的版本号，使用最新的版本即可.
-# 注：jsdelivr可以自动帮你生成.min版的js和css，所以你在设置js及css路径中可以直接写.min.xxx
+#---------------------------
+# 以下是配置 JS CSS 等静态资源的 URL 前缀，可以自定义成 CDN 地址，
+# 默认的 jsDelivr CDN 可能在部分地区无法访问，如果需要修改，最好使用与默认配置相同的版本，以避免潜在的问题，
+# ** 如果你不知道如何设置，请不要做任何改动 **
+#
+# Here is the url prefix to configure the static assets. Set CDN addresses you want to customize.
+# Be aware that you would better use the same version as default ones to avoid potential problems.
+# DO NOT EDIT THE FOLLOWING SETTINGS UNLESS YOU KNOW WHAT YOU ARE DOING
+#---------------------------
+
 libs:
   css:
     islu: /css/islu.css
@@ -491,7 +512,8 @@ addthis:
   pubid:  # 前往https://www.addthis.com/获取
 
 # 打字效果副标题.
-# 如果有符号 ‘ ，请在 ’ 前面加上 \ 例如 \' \‘
+# 如果有符号 ' ，请在 ' 前面加上 \ 
+# eg. \'
 subtitle:
   enable: true
   loop: true # 是否循环
@@ -501,7 +523,7 @@ subtitle:
   backSpeed: 50 # 删除速度
   sub:
     - 鸿鹄岂甘等闲志,斗胆立势同海枯.
-    - 如果上帝关了你的门并顺带关了你的窗，记住，这是上帝要开空调了
+    - 如果上帝关了你的门并顺带关了你的窗，记住，这是上帝要开空调了。
     - 这个世界上没有谁离不开谁，就算是一条鱼，离开了水，也能烤着吃。(>^ω^<)喵～
     - A little pig with a big dream.
 
@@ -542,9 +564,9 @@ vercel-logo:
 
 # CDN访问加速 
 # 第一次使用本功能，一定要先配置url，再`hexo cl && hexo g && hexo d`部署到GitHub的仓库，注意！必须是GitHub的仓库！
-# 如果必须要使用国内的coding或者gitee，可以采用双部署，同时将网站部署到两个仓库（其中一个必须是GitHub的仓库）
+# 如果必须要使用国内的Coding或者Gitee，可以采用双部署，同时将网站部署到两个仓库（其中一个必须是GitHub的仓库）
 # URL配置规则（例子如下）： https://cdn.jsdelivr.net/gh/你的GitHub用户名/你的仓库名
-# 如果想关闭此功能，将 url地址 注释或删除即可！
+# 如果想关闭此功能，将 URL地址 注释或删除即可！
 #////////////////////////
 # 自己网站部署
 # 1.复制./source/的文件去你的服务器 
@@ -554,4 +576,4 @@ vercel-logo:
 # 更多关于访问速度优化，请查看：https://blog.sky03.cn/posts/42790.html
 # 注：jsdelivr可以自动帮你生成.min版的js和css，所以你在上面设置js及css路径中可以直接写.min.xxx
 jsDelivr:
-  url: # https://cdn.jsdelivr.net/gh/ialoe/BlogCode
+  url: # https://unpkg.zhimg.com/xiaozhu2007-blog@latest/themes/pigfly/source/
