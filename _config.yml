@@ -1,7 +1,17 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
+#---------------------------
+# Hexo Theme Pigfly
+# Author: xiaozhu2007
+# Github: https://github.com/xiaozhu2007/hexo-theme-pigfly
+#
+# Guide: https://github.com/xiaozhu2007/hexo-theme-pigfly/wiki/
+# You can get more detailed help from the guide
+#---------------------------
 
+
+#---------------------------
+# 全局
+# Global
+#---------------------------
 # Only for theme "Pigfly"
 
 # Site
@@ -75,7 +85,7 @@ default_category: uncategorized # 未分类
 category_map:
 tag_map:
 
-# 数据元素《head 中 meta》
+# 数据元素 <meta>
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 meta_generator: true
 
